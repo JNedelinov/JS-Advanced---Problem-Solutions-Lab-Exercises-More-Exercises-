@@ -1,0 +1,6 @@
+Unexpected error: 
+Junior's salary was not logged.: 
+expected 
+'Peter recieved 1200 this month.' 
+to equal 
+'Peter received 1200 this month.'

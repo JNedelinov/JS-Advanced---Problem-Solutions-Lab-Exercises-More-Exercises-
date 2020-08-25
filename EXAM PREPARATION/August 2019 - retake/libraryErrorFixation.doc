@@ -1,0 +1,12 @@
+Unexpected error: 
+expected 
+'Subscriber: Peter, Type: normal\nReceived books: Lord of the rings by J. R. R. Tolkien\nSubscriber John, Type: special\nRecieved books: A Song of Ice and Fire by George R. R. MartinHarry Potter by J. K. Rowling\nSubscriber Josh, Type: vip\nRecieved books: Graf Monte Cristo by Alexandre DumasCromwell by Victor HugoMarie Tudor by Victor HugoBug-Jargal by Victor HugoLes Orientales by Victor HugoMarion de Lorme by Victor Hugo\n' 
+to equal 
+'Subscriber: Peter, Type: normal\nReceived books: Lord of the rings by J. R. R. Tolkien\nSubscriber: Josh, Type: vip\nReceived books: Graf Monte Cristo by Alexandre Dumas, Cromwell by Victor Hugo, Marie Tudor by Victor Hugo, Bug-Jargal by Victor Hugo, Les Orientales by Victor Hugo, Marion de Lorme by Victor Hugo\n'
+
+
+Unexpected error: 
+expected 
+'Subscriber: Peter, Type: normal\nReceived books: Lord of the rings by J. R. R. Tolkien\nSubscriber: Josh, Type: vip\nReceived books: Graf Monte Cristo by Alexandre Dumas, Cromwell by Victor Hugo, Marie Tudor by Victor Hugo, Bug-Jargal by Victor Hugo, Les Orientales by Victor Hugo, Marion de Lorme by Victor Hugo\n' 
+to equal 
+'Subscriber: Peter, Type: normal\nReceived books: Lord of the rings by J. R. R. Tolkien\nSubscriber: Josh, Type: vip\nReceived books: Graf Monte Cristo by Alexandre Dumas, Cromwell by Victor Hugo, Marie Tudor by Victor Hugo, Bug-Jargal by Victor Hugo, Les Orientales by Victor Hugo, Marion de Lorme by Victor Hugo\n'

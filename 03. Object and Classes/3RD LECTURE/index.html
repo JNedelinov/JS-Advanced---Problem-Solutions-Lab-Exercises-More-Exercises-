@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FromJSONToHTMLTable</title>
+    <style>
+        table,
+        th {
+            border: groove;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+    </div>
+    <script>
+        function fromJSONToHTMLTable(input = []) {
+            //Write your code here
+            let result = '<table>\n<tr>';
+
+            let regexForEntities = /[&<>"]/g
+
+            let keys = []
+            let values = []
+            let objArr = JSON.parse(input[0]);
+
+            Object.keys(objArr[0]).forEach(key => keys.push(key));
+
+            objArr.forEach(obj => values.push(Object.values(obj)));
+
+            keys.forEach(key => result += `<th>${key}</th>`);
+
+            result += '</tr>\n<tr>';
+
+            values.forEach(value => {
+                value.forEach(data => {
+                    result += `<td>${data}</td>`;
+                })
+                result += '</tr>\n';
+            });
+
+            result += '</table>';
+
+            return result;
+        }
+        window.onload = function () {
+            let container = document.getElementById('wrapper');
+            container.innerHTML = fromJSONToHTMLTable(['[{"Name":"Pesho <div>-a","Age":20,"City":"Sofia"},{"Name":"Gosho","Age":18,"City":"Plovdiv"},{"Name":"Angel","Age":18,"City":"Veliko Tarnovo"}]']);
+        };
+    </script>
+</body>
+
+</html>

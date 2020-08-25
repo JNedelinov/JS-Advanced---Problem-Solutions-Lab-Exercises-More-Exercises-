@@ -1,0 +1,22 @@
+Unexpected error: 
+expected 
+'Title: My Article\nCreator: Anny\nLikes: 0\nComments:\n-- 2.0. Ammy: New Content\n-- 3.0. Jessy: Nice :)\n-- 1.0. Sammy: Some Content\n--- 1.2. SAmmy: Reply@\n--- 1.1. Zane: Reply' 
+to equal 
+'Title: My Article\nCreator: Anny\nLikes: 0\nComments:\n-- 2. Ammy: New Content\n-- 3. Jessy: Nice :)\n-- 1. Sammy: Some Content\n--- 1.2. SAmmy: Reply@\n--- 1.1. Zane: Reply'
+
+
+Unexpected error: 
+expected 
+'Title: My Article\nCreator: Anny\nLikes: 3\nComments:\n-- 1. Anny: Some Content\n--- 1.1. Ammy: New Content\n-- 2. Zane: Reply\n--- 1.1. SAmmy: Reply@\n-- 3. Jessy: Nice :)' 
+to equal 
+
+Title: My Article
+Creator: Anny
+Likes: 3
+Comments:
+-- 1. Anny: Some Content
+--- 1.1. Ammy: New Content
+-- 2. Zane: Reply
+--- 1.1. SAmmy: Reply@
+
+'Title: My Article\nCreator: Anny\nLikes: 3\nComments:\n-- 1. Anny: Some Content\n--- 1.1. Ammy: New Content\n-- 2. Zane: Reply\n--- 2.1. SAmmy: Reply@\n-- 3. Jessy: Nice :)'
